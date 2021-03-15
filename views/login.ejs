@@ -1,0 +1,27 @@
+ <%- include("partials/header") -%>
+
+<body class="login">
+  
+
+ <form action="/login" method="POST" class="form-signin">
+      <img class="mb-4" src="images/seinenlogo.jpg" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+      <label for="inputUser" class="sr-only">Nome do usuário</label>
+      <input name="usuario" type="text" id="inputUser" class="form-control" placeholder="Nome do usuário" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input name="senha" type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+
+      <div class="checkbox">
+        <label>Lembrar senha </label>
+          <input type="checkbox" value="remember-me"> 
+      </div>
+        
+      
+
+      <button class="btn btn-md" type="submit">Entrar</button>
+      
+    </form>
+
+</body>
+
+<%- include("partials/footer") -%>

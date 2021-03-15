@@ -1,0 +1,286 @@
+
+/** {
+  border: 1px solid red;
+}*/
+
+.container{
+    width: 100%;
+    margin: 0;
+    padding: 0 5px 0 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.navbar {
+    height: 95px;
+    font-size: 12px;
+    letter-spacing: 5px;   
+}
+
+.imglogo {
+    border-radius: 30%;
+    margin: 5px 0 5px 15px;  
+}
+
+.navbar-nav li{
+    border-right: 1px dotted #C12E51;
+    position: relative;
+    bottom: 25px;   
+}
+
+.btn{
+    margin-left: 210px;
+    position: relative;
+    bottom: 25px;
+    color:  #C12E51;
+    border-color: #c62d49;
+    letter-spacing: 1px;
+}
+
+.btn:hover{
+    background: #c62d49;
+    color:  white;
+     border-color: #c62d49;
+}
+
+.btn:focus{
+    background-color: white;
+    color:  #c62d49;
+    border-color:  #c62d49;
+}
+
+.fas{
+    margin-right: 6px;
+    overflow: hidden;
+}
+
+#contato {
+    border-right: none;
+}
+
+.navbar-nav  {
+    margin: 0 0 0 300px;
+    width: 100%;  
+}
+
+.navbar-nav  li a:hover {
+  color: #C12E51 !important;}
+
+ body{
+    margin:0;
+    background-color:  #c62d49;
+    width: 100%;
+    height: 100%;
+}
+
+.circulo {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(140deg);
+  overflow: hidden;
+   position: relative;
+    top:50px;
+     left: 900px;
+}
+
+.dashed {
+  width: 60%;
+  stroke-dasharray: 960;
+  -webkit-animation: timer 2s infinite forwards;
+  animation: timer 2s  forwards;
+}
+
+@-webkit-keyframes timer {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.logoadd{
+    position: relative;
+    z-index: 1;
+    bottom: 20px;
+    left: 500px;
+
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    /*-webkit-animation-fill-mode:forwards; */ /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-delay: 1.25s;
+    -moz-animation-delay: 1.25s;
+    animation-delay: 1.25s;
+
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:10s;
+    animation-duration:1s;
+
+}
+
+ @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.titulo{
+    position: relative;
+    bottom: -50px;
+    right: 420px;   
+}
+
+.membro{
+    position: relative;
+    bottom: 150px;
+    left: 350px;
+     padding: 15px;
+     background:  #9C1233;
+     color: white;
+     border: white;
+
+}
+
+.membro:hover{
+    background: white;
+    color:  #c62d49;
+     border-color: #c62d49;
+}
+
+.redes{
+    background-color: #9C1233;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    margin: 30px 0 0 0;
+    position: relative;
+    bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fab{
+    color: white;
+    margin: 60px 100px 10px 100px;
+}
+
+.fab:hover{
+    opacity: 0.5;
+}
+
+#contato1{
+    color: white;
+    margin: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulocontato{
+    margin-bottom: 40px;
+}
+
+.telefone{
+    margin-bottom: 40px;
+}
+
+.footer {
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	background: white; 
+    color: #4B4B52;  
+
+}
+
+.footer h4{
+    padding-top: 10px;
+    opacity: 0.5;
+}
+
+.form-group{
+    margin: 20px 60px;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-control{
+    width: 50%;
+}
+
+#formulario{
+    background-color: #9C1233;
+}
+
+#formulario h1{
+    color: white;
+    margin: 50px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.foto{
+    color: white;
+    margin: 0 0 0 60px;
+}
+
+#file{
+    margin: 0 0 0 60px;
+    color: white;
+}
+
+#output{
+    margin: 0 20px 0 60px;
+}
+
+.registrar{
+    margin: 30px 0 0 300px;
+    color: #c62d49;
+}
+
+.login{
+    background-color: #9C1233;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.login form{
+    margin: 170px 0;
+
+}
+
+.login input{
+    margin: auto auto;
+    width: 18%;
+    padding: 25px;
+}
+
+.login h1{
+    margin: 20px 0;
+}
+
+.login button{
+    position: relative;
+    top:20px;
+    right: 100px;
+}
+
+.checkbox{
+    position: relative;
+    right: 20px;  
+}
+
+.checkbox input{
+    position: relative;
+    left: 680px;
+    top:5px;
+}
+
+.popup{
+    background-color: red;
+    display: none;
+}
+

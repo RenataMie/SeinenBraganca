@@ -1,0 +1,96 @@
+<%- include("partials/header") -%>
+<body id="formulario">
+    
+
+
+<h1>Formulário</h1><br>
+
+
+
+<label class="foto" for="file">Adicione uma foto:</label>
+<input type="file"  accept="image/gif, image/jpeg, image/png" name="image" id="file" onchange="loadFile(event)">
+
+<p><img id="output" width="200"/></p>
+
+
+<script>
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
+
+
+<form action="/form" method="POST">
+
+<div class="form-group">
+
+		
+	
+		<label> Nome Completo:</label>
+		<input name = "Nomeform" class = "form-control" id = "Text" type = "text" ><br>
+
+        <h4>Dados para fazer login:</h4>
+
+        <label> Nome do usuário:</label>
+        <input name= "username" type="text" class="form-control" id="user" placeholder="" required><br> 
+
+        <label> Senha:</label>
+        <input name= "password" type="password" class="form-control" id="senha" placeholder="" required><br>
+
+
+	
+        <label> Apelido (se tiver):</label>
+        <input name = "Apelidoform" type = "text" class = "form-control" id = "apelido" placeholder = "" required><br>   
+
+
+        <label> Data de nascimento: </label>
+        <input name= "Nascform" type="date" class="form-control" id="nasc" placeholder="" required><br>
+    
+
+   
+        <label> Telefone para contato:</label>
+        <input name=" Tel1form" type="tel" class="form-control" id="tel" placeholder="" required><br>   
+   
+
+  
+        <label> E-mail:</label><br>
+        <input name = "Emailform" type="email" class="form-control" id="email" placeholder="" required><br> 
+
+
+        <label> Endereço:</label>
+        <input name ="Endform" type="text" class="form-control" id="endereco" placeholder="" required><br>   
+
+        <label> Complemento: </label>
+        <input name="Compleform" type="text" class="form-control" id="complemento" placeholder="" required><br> 
+
+        <label> CEP:</label>
+        <input name="Cepform" type="text" class="form-control" id="cep" placeholder="" required><br>
+
+        
+
+
+        <h4>Contato em caso de emergência:</h4>
+
+        <label> Nome:</label>
+        <input name="Nomecontform" type="text" class="form-control" id="nomeemerg" placeholder="" required><br>
+
+        <label> Telefone:</label>
+        <input name="Tel2form" type="tel" class="form-control" id="telemerg" placeholder="" required><br> 
+   	
+</div>
+	
+	<button class="registrar btn btn-lg" type="submit">Registrar</button>
+</form>
+
+<div class="popup">
+
+<h1> Oi </h1>
+</div>
+
+</body>
+
+<%- include("partials/footer") -%>
+
+
+
